@@ -1,3 +1,6 @@
+# PayFlow – Digital Wallet & Transaction Processing Engine
+
+
 ## 🧭 Project Overview
 
 PayFlow is a secure digital wallet and transaction processing backend system inspired by modern fintech platforms. The system supports wallet management, fund transfers, transaction tracking, role-based access control, and transaction safety mechanisms such as daily transfer limits and duplicate transaction prevention. Built with Express.js, TypeScript, MongoDB, and JWT authentication, the platform follows a modular architecture for scalability and maintainability.
