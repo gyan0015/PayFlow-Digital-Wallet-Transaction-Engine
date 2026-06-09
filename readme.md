@@ -1,47 +1,47 @@
-# 💰 DigiPay - Digital Wallet System Backend
-
-Welcome to **DigiPay**, a secure, modular, and role-based backend API designed for a digital wallet system inspired by popular platforms like Bkash and Nagad. Built using Express.js and Mongoose, this backend empowers users, agents, and admins to perform wallet management, transactions, and role-based operations with ease and security.
-
----
-
 ## 🧭 Project Overview
 
-DigiPay offers a comprehensive backend solution where:
-
-- Users can register, top-up wallets, withdraw funds, send money, and view their transaction history.
-- Agents can perform cash-in and cash-out operations on behalf of users and monitor their commission history.
-- Admins have full control over users, agents, wallets, and transactions, including blocking wallets and managing agent statuses.
-
-The system is built with JWT-based authentication, secure password hashing, and a modular architecture following best practices for scalability and maintainability.
-
+PayFlow is a secure digital wallet and transaction processing backend system inspired by modern fintech platforms. The system supports wallet management, fund transfers, transaction tracking, role-based access control, and transaction safety mechanisms such as daily transfer limits and duplicate transaction prevention. Built with Express.js, TypeScript, MongoDB, and JWT authentication, the platform follows a modular architecture for scalability and maintainability.
 ---
 
 ## 📌 Key Features
 
-### Authentication & Authorization
+### 🔐 Authentication & Authorization
 
-- JWT-based login system with three roles: **admin**, **user**, **agent**.
-- Secure password hashing using bcrypt.
-- Role-based route protection to restrict access.
+- JWT-based authentication with secure access and refresh token mechanism.
+- Role-based access control (Admin, User, Agent).
+- Password encryption using bcrypt for secure credential storage.
+- Protected APIs using middleware-based authorization.
 
-### Wallet Management
+### 💳 Wallet Management
 
-- Automatic wallet creation for users and agents during registration.
-- Initial wallet balance assigned (e.g., ৳50).
-- Users can top-up, withdraw, and transfer money.
-- Agents can cash-in and cash-out money for users.
-- Admins can block/unblock wallets and approve/suspend agents.
+- Automatic wallet creation during user and agent registration.
+- Wallet balance management with real-time updates.
+- Fund transfers between users with balance validation.
+- Cash-in and cash-out operations supported through agents.
+- Admin controls for wallet blocking/unblocking and agent approval.
 
-### Transaction Management
+### 💸 Transaction Processing Engine
 
-- All transactions (top-up, withdrawal, transfer, cash-in/out) are recorded and traceable.
-- Supports transaction history retrieval for users and agents.
-- Admins can view all transactions.
+- Secure money transfers with unique transaction reference IDs.
+- Transaction status tracking (Pending, Success, Failed).
+- Complete transaction history and audit trail.
+- Daily transaction limits to prevent misuse and suspicious activity.
+- Duplicate transaction prevention using idempotency validation.
+- Automatic balance updates after successful transactions.
 
-### Modular Architecture
+### 📊 Transaction Monitoring
 
-- Separate modules for authentication, users, wallets, and transactions.
-- Clean folder structure for scalability and ease of development.
+- Detailed transaction logs for traceability and debugging.
+- User-wise and agent-wise transaction history retrieval.
+- Admin dashboard APIs for monitoring all platform transactions.
+- Commission tracking for agents.
+
+### 🏗️ Scalable Backend Architecture
+
+- Modular architecture with separate Authentication, Wallet, User, and Transaction modules.
+- RESTful API design following industry best practices.
+- MongoDB + Mongoose integration with schema validation.
+- TypeScript-based codebase for better maintainability and type safety.
 
 ---
 
