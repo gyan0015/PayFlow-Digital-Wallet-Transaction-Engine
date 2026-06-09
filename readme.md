@@ -181,8 +181,4 @@ npm install
 
 ---
 
-<p align="center">
-  🛠️ Developed by <strong>Khaled Saifulla</strong> with clean backend architecture ❤️.
-</p>
 
----
